@@ -1,5 +1,62 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Привет Мир.");
+        System.out.println("Задача №1");
+        var dogs = 8.0;
+        var cats = 3.6;
+        var paper = 763789;
+        System.out.println(dogs);
+        System.out.println(cats);
+        System.out.println(paper);
+        System.out.println("Задача №2");
+        dogs = dogs + 4;
+        cats = cats + 4;
+        paper = paper + 4;
+        System.out.println(dogs);
+        System.out.println(cats);
+        System.out.println(paper);
+        System.out.println("Задача №3");
+        dogs = dogs - 3.5;
+        cats = cats - 1.6;
+        paper = paper - 7639;
+        System.out.println(dogs);
+        System.out.println(cats);
+        System.out.println(paper);
+        System.out.println("Задача №4");
+        var friend = 19;
+        System.out.println(friend);
+        friend = friend + 2;
+        System.out.println(friend);
+        friend = friend / 7;
+        System.out.println(friend);
+        System.out.println("Задача №5");
+        var frog = 3.5;
+        System.out.println(frog);
+        frog = frog * 10;
+        System.out.println(frog);
+        frog = frog / 3.5;
+        System.out.println(frog);
+        frog = frog + 4;
+        System.out.println(frog);
+        System.out.println("Задача №6");
+        var boxerOne = 78.2;
+        var boxerTwo = 82.7;
+        var boxerBoth = boxerOne + boxerTwo;
+        System.out.println("Вес обоих бойцов " + boxerBoth + " кг");
+        var boxerMargin = boxerOne - boxerTwo;
+        System.out.println(boxerMargin);
+        System.out.println("Задача №7");
+        var boxerDifference = boxerTwo - boxerOne;
+        System.out.println("Вес второго бойца больше веса первого на " + boxerDifference + " кг");
+        var boxerDifferential = boxerTwo % boxerOne;
+        System.out.println("Первый боец уступает своему оппоненту  на " + boxerDifferential + " кг");
+        System.out.println("Задача №8");
+        var timeWork = 640;
+        var timeShift = 8;
+        var allWorkers = timeWork / timeShift;
+        System.out.println(" 1. Всего работников в компании — " + allWorkers + " человек");
+        allWorkers = allWorkers + 94;
+        timeWork = allWorkers * timeShift;
+        System.out.println("Если в компании работает " + allWorkers + " человек, то всего " + timeWork + " часов работы может быть поделено между сотрудниками");
+
     }
 }
