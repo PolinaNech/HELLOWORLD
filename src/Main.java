@@ -21,13 +21,14 @@ public class Main {
         short k = -159;
         short  l = 27897;
         byte m = 67;
-        System.out.println("Задание №2");
+        System.out.println("Задание №3");
         byte lP = 23;
         byte aS = 27;
         byte eA= 30;
         short allPaper = 480;
         int studentPaper = allPaper/(lP + aS + eA);
         System.out.println("На каждого ученика рассчитано " + studentPaper + " листов бумаги");
+        System.out.println("Задание №4");
 
     }
 }
