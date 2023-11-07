@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Домашнее заданее №5. Тема: Условный оператор.");
+        System.out.println("Домашнее заданее №5.Тема: Условный оператор.");
         System.out.println("Задача №1");
         int typeSystem = 1;
         switch (typeSystem) {
