@@ -54,8 +54,33 @@ public class Main {
             totalyVas = totalyVas+inputs+percentVasiliya;
         }
         System.out.println("Задача №6");
-
+        int monthV = 0;
+        int yearV = monthV/12;
+        int startCash = 15_000;
+        int precentV = startCash * 7 / 100;
+        int totalV = 0;
+        while (yearV<10){
+            if (monthV%6== 0){
+                System.out.println("Месяц " +monthV+ ", год " + yearV + ", сумма накоплений равна: " + totalV + " рублей");
+            }
+            monthV = monthV+1;
+            totalV = totalV+startCash+precentV;
+            yearV = monthV/12;
+        }
         System.out.println("Задача №7");
-
+        int number = 1;
+        while (number < 32){
+            System.out.println("Сегодня пятница, " + number + "-е число. Необходимо подготовить отчет.");
+            number = number+7;
+        }
+        System.out.println("Задача №8");
+        int yearComet = 0;
+        int comet = 79;
+        while (yearComet < 2123){
+            yearComet= yearComet + comet;
+            if (yearComet > 1823 && yearComet < 2123){
+                System.out.println(yearComet);
+            }
+        }
     }
 }
