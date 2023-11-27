@@ -22,6 +22,18 @@ public class Main {
             System.out.println("Для данного вида операционной системы приложение пока не предусмотренно.");
         }
     }
+    public static void calculationDelivery(int deliveryDistance){
+        int day = 1;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + day );
+        } else if (deliveryDistance >= 20 && deliveryDistance <60){
+            System.out.println("Потребуется дней: " + (day+1));
+        } else if (deliveryDistance >= 60 && deliveryDistance <100) {
+            System.out.println("Потребуется дней: " + (day + 2));
+        } else {
+            System.out.println("Нет доставки в этот район.");
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Домашнее задание № 11. Тема: Методы");
         System.out.println("Задача №1");
@@ -32,5 +44,7 @@ public class Main {
         int typeSystem = 1;
         calculationVersionDevice(clientDeviceYear,typeSystem);
         System.out.println("Задача №3");
+        int deliveryDistance = 22;
+        calculationDelivery(deliveryDistance);
     }
 }
