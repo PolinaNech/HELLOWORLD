@@ -1,6 +1,41 @@
 import java.util.Arrays;
 
 public class Main {
+    public static void countingLeapYear(int year){
+        if ((year % 4 == 0 && year % 100 !=0) || (year % 400 == 0)) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+    }
+    public static void calculationVersionDevice(int clientDeviceYear, int typeSystem){
+        boolean oldVersion = clientDeviceYear < 2015;
+        boolean iosType = typeSystem == 0;
+        boolean androidType = typeSystem == 1;
+        if (oldVersion && iosType){
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (iosType){
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }  else if (oldVersion && androidType){
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (androidType){
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Для данного вида операционной системы приложение пока не предусмотренно.");
+        }
+    }
+    public static void calculationDelivery(int deliveryDistance){
+        int day = 1;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + day );
+        } else if (deliveryDistance >= 20 && deliveryDistance <60){
+            System.out.println("Потребуется дней: " + (day+1));
+        } else if (deliveryDistance >= 60 && deliveryDistance <100) {
+            System.out.println("Потребуется дней: " + (day + 2));
+        } else {
+            System.out.println("Нет доставки в этот район.");
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Привет Мир.");
         System.out.println("Hello World!");
@@ -295,7 +330,8 @@ System.out.println("Домашнее заданее №5.Тема: Условн�
             default:
                 System.out.println("Такого месяца нет.");
         }
- System.out.println("Домашнее задание №6. Тема: Циклы");
+      
+        System.out.println("Домашнее задание №6. Тема: Циклы");
         System.out.println("Задача №1");
         for (int i = 1; i < 11; i=i+1){
             System.out.println(i);
@@ -335,7 +371,8 @@ System.out.println("Домашнее заданее №5.Тема: Условн�
         System.out.println("Задача №10");
         for (int i = 1; i < 11; i=i+1){
             System.out.println("2*" +i+ "=" + 2*i);
-System.out.println("Домашнее аданее №7. Тема: Циклы. Часть 2.");
+
+        System.out.println("Домашнее аданее №7. Тема: Циклы. Часть 2.");
         System.out.println("Задача №1");
         int i = 0;
         int salary = 15_000;
@@ -417,6 +454,7 @@ System.out.println("Домашнее аданее №7. Тема: Циклы. Ч
                 System.out.println(yearComet);
             }
         }
+        
         System.out.println("Домашнее задание №8. Тема: Массивы");
         System.out.println("Задача №1.");
         int [] first = new int [3];
@@ -457,7 +495,8 @@ System.out.println("Домашнее аданее №7. Тема: Циклы. Ч
                 System.out.print(first[x] + " ");
             }
     }
-      public static void main(String[] args) {
+      
+      public static void mainOne(String[] args) {
         System.out.println("Домашнее задание №9. Тема: Массивы. Часть 2.");
         task1();
         task2();
@@ -524,7 +563,9 @@ System.out.println("Домашнее аданее №7. Тема: Циклы. Ч
             System.out.print(reverseFullName[i]);
             i = i - 1;
         }
-    } 
+    }  
+      
+      public static void mainNew(String[] args) {
       System.out.println("Домашнее задание № 10. Тема: Строки");
         System.out.println("Задача №1");
         String firstName = "Ivan ";
@@ -537,6 +578,18 @@ System.out.println("Домашнее аданее №7. Тема: Циклы. Ч
         System.out.println("Задача №3");
         fullName = "Иванов Семён Семёнович";
         System.out.println("Данные Ф. И. О. сотрудника - " + fullName.replace('ё','е'));
+        
+        System.out.println("Домашнее задание № 11. Тема: Методы");
+        System.out.println("Задача №1");
+        int year = 2021;
+        countingLeapYear(year);
+        System.out.println("Задача №2");
+        int clientDeviceYear = 2010;
+        int typeSystem = 1;
+        calculationVersionDevice(clientDeviceYear,typeSystem);
+        System.out.println("Задача №3");
+        int deliveryDistance = 22;
+        calculationDelivery(deliveryDistance);
     }
 }
 
