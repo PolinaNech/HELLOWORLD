@@ -16,7 +16,7 @@ public class Book {
         return published;
     }
 
-    public void setPublisher(String published) {
+    public void setPublished(String published) {
         this.published = published;
 
     }
