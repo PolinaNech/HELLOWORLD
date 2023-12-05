@@ -7,14 +7,16 @@ public class Author {
         this.surname = surname;
         this.author = name + surname;
     }
-    public Author(String author) {
-        this.author = author;
+    public String getName() {
+        return name;
     }
-
-    public String getAuthor() {
-        return author;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setAuthor(String author) {
-        this.author = author;
+    public String getSurname() {
+        return surname;
+    }
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }
