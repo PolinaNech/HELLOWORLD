@@ -1,23 +1,26 @@
 public class Book {
     Author author ;
     int pageAmount;
-    String publisher;
+    String published;
+    String title;
 
-    public Book( String author , int pageAmount, String publisher) {
+    public Book( String author , int pageAmount, String published, String title) {
         this.pageAmount = pageAmount;
-        this.publisher = publisher;
+        this.published = published;
+        this.title = title;
     }
     public int getPageAmount() {
         return this.pageAmount;
     }
-    public void setPageAmount() {
-        this.pageAmount = pageAmount;
-    }
-    public String getPublisher() {
-        return publisher;
+    public String getPublished() {
+        return published;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
+    public void setPublisher(String published) {
+        this.published = published;
+
+    }
+    public String getTitle() {
+        return title;
     }
 }
