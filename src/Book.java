@@ -7,6 +7,12 @@ public class Book {
         this.pageAmount = pageAmount;
         this.publisher = publisher;
     }
+    public int getPageAmount() {
+        return this.pageAmount;
+    }
+    public void setPageAmount() {
+        this.pageAmount = pageAmount;
+    }
     public String getPublisher() {
         return publisher;
     }
