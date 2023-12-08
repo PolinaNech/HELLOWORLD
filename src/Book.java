@@ -1,10 +1,11 @@
-public class Book {
+public class Book extends Author {
         Author author ;
         int pageAmount;
         int published;
         String title;
 
-        public Book( String author , int pageAmount, int published, String title) {
+        public Book( Author author, int pageAmount, int published, String title) {
+            this.author = author;
             this.pageAmount = pageAmount;
             this.published = published;
             this.title = title;
