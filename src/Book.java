@@ -1,11 +1,10 @@
-public class Book extends Author {
+public class Book {
         Author author ;
         int pageAmount;
         int published;
         String title;
 
-        public Book( Author author, int pageAmount, int published, String title) {
-            this.author = author;
+        public Book( String author, int pageAmount, int published, String title) {
             this.pageAmount = pageAmount;
             this.published = published;
             this.title = title;
@@ -24,4 +23,17 @@ public class Book extends Author {
         public String getTitle() {
             return title;
         }
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        return title.equals(title);
     }
+    public int hashCode() {
+        return java.util.Objects.hash(title);
+    }
+    public String toString(){
+        return "Количество страниц: " + pageAmount + " Год публикации: " + published + " Книга:" + title;
+    }
+
+}
