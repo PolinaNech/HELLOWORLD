@@ -20,18 +20,15 @@ public class Author {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-    @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
         }
         return author.equals(name + surname);
     }
-    @Override
     public int hashCode() {
         return java.util.Objects.hash(author);
     }
-    @Override
     public String toString(){
         return "Автор: " + author;
     }
