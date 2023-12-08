@@ -1,5 +1,5 @@
 public class Book {
-        Author author ;
+        Author author;
         int pageAmount;
         int published;
         String title;

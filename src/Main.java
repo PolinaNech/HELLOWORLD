@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Домашнее задание № 12. Тема: Объекты и классы.");
+        System.out.println("Домашнее задание № 12.Тема: Объекты и классы.");
         Author author1 = new Author("Stephen"," King ");
         Book book1= new Book( "Stephen King ",1248, 1986, " It");
         System.out.println(author1 + " " + book1 );

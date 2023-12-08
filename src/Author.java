@@ -1,5 +1,5 @@
 import java.util.Objects;
-public class Author {
+public class Author{
     String author;
     String name;
     String surname;
