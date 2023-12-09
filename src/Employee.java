@@ -1,6 +1,6 @@
-import java.util.IntSummaryStatistics;
 import java.util.Objects;
-public class Employee  {
+
+public class Employee {
     private static int id = 0;
     private String surname;
     private String name;
@@ -8,46 +8,55 @@ public class Employee  {
     private int section;
     private int salary;
     public int stats;
-    public Employee (String surname, String name, String paternity, int section, int salary){
-        id=id+1;
-        this.surname=surname;
-        this.name=name;
-        this.paternity=paternity;
-        this.section=section;
-        this.salary=salary;
+
+    public Employee(String surname, String name, String paternity, int section, int salary) {
+        id = id + 1;
+        this.surname = surname;
+        this.name = name;
+        this.paternity = paternity;
+        this.section = section;
+        this.salary = salary;
+            while (id>0){
+                id=id-1;
+                stats=stats+salary;
+            }
 
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
-    public String getSurname(){
+
+    public String getSurname() {
         return surname;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getPaternity(){
+
+    public String getPaternity() {
         return paternity;
     }
-    public int getSection(){
+
+    public int getSection() {
         return section;
     }
-    public void setSection(int getSection){
-        this.section=section;
+
+    public void setSection(int getSection) {
+        this.section = section;
     }
-    public int getSalary(){
+
+    public int getSalary() {
         return salary;
     }
-    public void setSalary(int getSalary){
-        this.salary=salary;
-    }
-    @Override
-    public String toString(){
-        return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей.";}
 
-    public Employee(int salary, int stats) {
-        stats= 0;
-        IntSummaryStatistics
+    public void setSalary(int getSalary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей."+ stats;
     }
 }
