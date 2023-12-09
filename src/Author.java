@@ -37,9 +37,3 @@ public class Author{
     }
 
 }
-    public String toString(){
-        return author + "Количество страниц: " + pageAmount + " Год публикации: " + published + " Книга:" + title;
-    }
-
-}
-}
