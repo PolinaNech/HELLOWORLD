@@ -7,7 +7,7 @@ public class Employee {
     private String paternity;
     private int section;
     private int salary;
-    public int stats;
+    private static int stats;
 
     public Employee(String surname, String name, String paternity, int section, int salary) {
         id = id + 1;
@@ -16,10 +16,6 @@ public class Employee {
         this.paternity = paternity;
         this.section = section;
         this.salary = salary;
-            while (id>0){
-                id=id-1;
-                stats=stats+salary;
-            }
 
     }
 
@@ -54,9 +50,11 @@ public class Employee {
     public void setSalary(int getSalary) {
         this.salary = salary;
     }
-
     @Override
     public String toString() {
-        return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей."+ stats;
+        stats= stats + salary;
+        return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей.";
     }
+
+
 }
