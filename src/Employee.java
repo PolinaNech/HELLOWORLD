@@ -1,3 +1,4 @@
+import java.util.IntSummaryStatistics;
 import java.util.Objects;
 public class Employee  {
     private static int id = 0;
@@ -6,7 +7,7 @@ public class Employee  {
     private String paternity;
     private int section;
     private int salary;
-    public int sum;
+    public int stats;
     public Employee (String surname, String name, String paternity, int section, int salary){
         id=id+1;
         this.surname=surname;
@@ -14,6 +15,7 @@ public class Employee  {
         this.paternity=paternity;
         this.section=section;
         this.salary=salary;
+
     }
 
     public int getId(){
@@ -44,4 +46,8 @@ public class Employee  {
     public String toString(){
         return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей.";}
 
+    public Employee(int salary, int stats) {
+        stats= 0;
+        IntSummaryStatistics
+    }
 }
