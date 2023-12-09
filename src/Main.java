@@ -4,5 +4,6 @@ public class Main {
         System.out.println(frame1);
         Employee frame2 = new Employee("Ivanova","Anna","Ivanovna",4,75000);
         System.out.println(frame2);
+
     }
 }
