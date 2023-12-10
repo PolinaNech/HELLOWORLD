@@ -7,7 +7,10 @@ public class Employee {
     private String paternity;
     private int section;
     private int salary;
-    private static int stats;
+    public static int sum;
+    public static int min;
+    public static int max;
+    public static int middle;
 
     public Employee(String surname, String name, String paternity, int section, int salary) {
         id = id + 1;
@@ -50,11 +53,22 @@ public class Employee {
     public void setSalary(int getSalary) {
         this.salary = salary;
     }
+
     @Override
     public String toString() {
-        stats= stats + salary;
-        return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей.";
+        sum = sum + salary;
+        if (id < 2) {
+            min = salary;}
+        if (min > salary) {
+            min = salary;
+        }
+        if (id < 2) {
+            max = salary;}
+        if (max < salary) {
+            max = salary;
+        }
+        middle = sum/id;
+        return "ID: " + id + ". Ф.И.О: " + surname + " " + name + " " + paternity + ". Отдел: " + section + ". Заработная плата: " + salary + " рублей. Сумма заработной платы всех рабочих: " + sum + " рублей. Минимальная заработная плата: " + min +" рублей. Максимальная заработная плата: " + max + " рублей. Среднее значение зарплат: "+ middle;
     }
-
 
 }

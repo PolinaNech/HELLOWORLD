@@ -8,6 +8,5 @@ public class Main {
         System.out.println(frame2);
         Employee frame3 = new Employee("Ivanova","Alla","Ivanovna",1,60000);
         System.out.println(frame3);
-
     }
 }
