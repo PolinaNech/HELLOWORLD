@@ -15,8 +15,6 @@ public class Main {
         employees[8] = new Employee("Uchiha", "Sasuke", "Vicktorovich", 2, 95000);
         employees[9] = new Employee("Simpson", "Marge", "Alexandrovna", 3, 185000);
         Employee employee = employees[0];
-        String name = employee.getName();
-        System.out.println(name);
         System.out.println(employee);
         int salarySum = getSumSalary();
         System.out.println("Сумма затрат на зарплаты в месяц: " + salarySum);
@@ -26,6 +24,20 @@ public class Main {
         System.out.println("Сотрудник  с максимальной зарплатой: " + salaryMax);
         int salaryAverage = getSalaryAverage();
         System.out.println("Среднее значение зарплат: " + salaryAverage);
+        String fullName = getFullName();
+    }
+
+    private static String getFullName() {
+        String result = null;
+        for (int i = 0; i < employees.length; i++) {
+            Employee employee = employees[i];
+            String surname = employee.getSurname();
+            String name = employee.getName();
+            String paternity = employee.getPaternity();
+            result = surname + " " + name + " " + paternity;
+            System.out.println(result);
+        }
+        return result;
     }
 
     private static int getSumSalary() {
@@ -48,6 +60,7 @@ public class Main {
                 result = salary;
             }
         }
+
         return result;
     }
     private static int getSalaryMax() {

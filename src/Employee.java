@@ -1,9 +1,7 @@
 import java.util.Objects;
 
 public class Employee {
-    private static int  id(){
-        e
-    }
+    private static int id;
     private String surname;
     private String name;
     private String paternity;
