@@ -26,7 +26,6 @@ public class Main {
         System.out.println("Среднее значение зарплат: " + salaryAverage);
         String fullName = getFullName();
     }
-
     private static String getFullName() {
         String result = null;
         for (int i = 0; i < employees.length; i++) {

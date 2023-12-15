@@ -7,7 +7,6 @@ public class Employee {
     private String paternity;
     private int section;
     private int salary;
-
     public Employee(String surname, String name, String paternity, int section, int salary) {
         this.surname = surname;
         this.name = name;
