@@ -1,21 +1,21 @@
 import java.util.Objects;
 
 public class Employee {
-    private static int id;
+    private int id;
     private String surname;
     private String name;
     private String paternity;
     private int section;
     private int salary;
+    private static int counter = 1;
     public Employee(String surname, String name, String paternity, int section, int salary) {
         this.surname = surname;
         this.name = name;
         this.paternity = paternity;
         this.section = section;
         this.salary = salary;
-
+        this.id = counter++;
     }
-
     public int getId() {
         return id;
     }
