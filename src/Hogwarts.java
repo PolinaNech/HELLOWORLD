@@ -35,8 +35,4 @@ public class Hogwarts  {
         this.transgressionDistance = transgressionDistance;
     }
 
-    public String toString(){
-        return "Студент: " + surname + name + "; Сила магии: " + powerOfMagic + "; Дистанция трансгресии: " + transgressionDistance + ". ";
-    }
-
 }

@@ -16,19 +16,32 @@ public class Main {
                 new Hogwarts("Патил ","Падма",70,62),
                 new Hogwarts("Белби ","Маркус", 68,71),
         };
-        System.out.println("Всего студентов: " + students.length);
-        for (int i = 0; i < students.length; i++) {
-            Hogwarts hogwarts = students[i];
-            System.out.println("Студент: " + hogwarts.getSurname() + hogwarts.getName() + "; Сила магии: " + hogwarts.getPowerOfMagic() + "; Дистанция трансгресии: " + hogwarts.getTransgressionDistance() + ". ");
-            }
-    Gryffindor [] potterSquad = {
+
+        Gryffindor [] potterSquad = {
                 new Gryffindor("Поттер","Гарри", 62,27,67,43,98),
                 new Gryffindor("Грейнджер ","Гермиона",95,78,70,80,50),
                 new Gryffindor("Уизли ","Рон",34,48,40,56,39),
-    };
-        for (int i = 0; i <potterSquad.length; i++) {
-            Gryffindor gryffindor = potterSquad[i];
-            System.out.println("Факультет: Гриффиндор. Благородство: " + gryffindor.getNobility() + "; Честь:" + gryffindor.getHonor() + "; Храбрость:" + gryffindor.getBravery() + ".");
-        }
+        };
+        Slytherin [] malfoySquad = {
+                new Slytherin("Малфой ","Драко",69,57,74,65,46),
+                new Slytherin("Монтегю ","Грэхэм",45,17,53,36,71),
+                new Slytherin("Гойл ","Грегори",29,20,5,87,46),
+        };
+        Hufflepuff [] diggorySquad = {
+                new Hufflepuff("Смит ","Захария",59,46,87,67,74),
+                new Hufflepuff("Диггори ", "Седрик",56,73,69,86,75),
+                new Hufflepuff("Финч-Флетчли ","Джастин",42,48,76,70,97),
+        };
+        Ravenclaw [] lovegoodSquad = {
+                new Ravenclaw("Чанг ","Чжоу",86,75,64,42,73,57),
+                new Ravenclaw("Патил ","Падма",70,62,78,43,54,39),
+                new Ravenclaw("Белби ","Маркус", 68,71,51,87,12,61),
+        };
+
+        PrintService printService = new PrintService();
+        printService.print(students);
+        printService.print(potterSquad);
+        printService.print(malfoySquad);
+        printService.print(diggorySquad);
     }
 }
