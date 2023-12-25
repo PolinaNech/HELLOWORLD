@@ -23,9 +23,9 @@ public class Main {
                 new Gryffindor("Уизли ","Рон",34,48,40,56,39),
         };
         Slytherin [] malfoySquad = {
-                new Slytherin("Малфой ","Драко",69,57,74,65,46),
-                new Slytherin("Монтегю ","Грэхэм",45,17,53,36,71),
-                new Slytherin("Гойл ","Грегори",29,20,5,87,46),
+                new Slytherin("Малфой ","Драко",69,57,74,65,46,69,87),
+                new Slytherin("Монтегю ","Грэхэм",45,17,53,36,71,78,57),
+                new Slytherin("Гойл ","Грегори",29,20,5,87,46,56,90),
         };
         Hufflepuff [] diggorySquad = {
                 new Hufflepuff("Смит ","Захария",59,46,87,67,74),
