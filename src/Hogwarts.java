@@ -1,8 +1,8 @@
 public class Hogwarts  {
-    private static String surname;
-    private static String name;
-    private static int powerOfMagic;
-    private static int transgressionDistance;
+    private String surname;
+    private String name;
+    private int powerOfMagic;
+    private int transgressionDistance;
 
     public Hogwarts(String surname,  String name, int powerOfMagic,int transgressionDistance) {
         this.surname = surname;
@@ -11,28 +11,28 @@ public class Hogwarts  {
         this.transgressionDistance = transgressionDistance;
     }
 
-    public static String getSurname() {
+    public String getSurname() {
         return surname;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public static int getPowerOfMagic() {
+    public int getPowerOfMagic() {
         return powerOfMagic;
     }
 
-    public static void setPowerOfMagic(int powerOfMagic) {
-        Hogwarts.powerOfMagic = powerOfMagic;
+    public void setPowerOfMagic(int powerOfMagic) {
+        this.powerOfMagic = powerOfMagic;
     }
 
-    public static int getTransgressionDistance() {
+    public int getTransgressionDistance() {
         return transgressionDistance;
     }
 
-    public static void setTransgressionDistance(int transgressionDistance) {
-        Hogwarts.transgressionDistance = transgressionDistance;
+    public void setTransgressionDistance(int transgressionDistance) {
+        this.transgressionDistance = transgressionDistance;
     }
 
     public String toString(){

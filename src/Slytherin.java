@@ -1,2 +1,35 @@
-public class Slytherin {
+public class Slytherin extends Hogwarts{
+    private int guile;
+    private int resolve;
+    private int ambition;
+    public Slytherin (String surname,  String name, int powerOfMagic,int transgressionDistance, int guile, int resolve, int ambition){
+        super(surname,name,powerOfMagic,transgressionDistance);
+        this.guile = guile;
+        this.resolve = resolve;
+        this.ambition = ambition;
+    }
+
+    public int getGuile() {
+        return guile;
+    }
+
+    public void setGuile(int guile) {
+        this.guile = guile;
+    }
+
+    public int getResolve() {
+        return resolve;
+    }
+
+    public void setResolve(int resolve) {
+        this.resolve = resolve;
+    }
+
+    public int getAmbition() {
+        return ambition;
+    }
+
+    public void setAmbition(int ambition) {
+        this.ambition = ambition;
+    }
 }

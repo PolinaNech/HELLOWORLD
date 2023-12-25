@@ -19,15 +19,16 @@ public class Main {
         System.out.println("Всего студентов: " + students.length);
         for (int i = 0; i < students.length; i++) {
             Hogwarts hogwarts = students[i];
-            System.out.println(students[i]);
-        }
+            System.out.println("Студент: " + hogwarts.getSurname() + hogwarts.getName() + "; Сила магии: " + hogwarts.getPowerOfMagic() + "; Дистанция трансгресии: " + hogwarts.getTransgressionDistance() + ". ");
+            }
     Gryffindor [] potterSquad = {
                 new Gryffindor("Поттер","Гарри", 62,27,67,43,98),
-
+                new Gryffindor("Грейнджер ","Гермиона",95,78,70,80,50),
+                new Gryffindor("Уизли ","Рон",34,48,40,56,39),
     };
         for (int i = 0; i <potterSquad.length; i++) {
             Gryffindor gryffindor = potterSquad[i];
-            System.out.println(potterSquad[i]);
+            System.out.println("Факультет: Гриффиндор. Благородство: " + gryffindor.getNobility() + "; Честь:" + gryffindor.getHonor() + "; Храбрость:" + gryffindor.getBravery() + ".");
         }
     }
 }
