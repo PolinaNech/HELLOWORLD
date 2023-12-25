@@ -10,8 +10,8 @@ public class PrintService {
         Hogwarts hogwarts = students[x];
         System.out.println(hogwarts.getSurname() + hogwarts.getName());
         int a = hogwarts.getPowerOfMagic() + hogwarts.getTransgressionDistance();
-        Hogwarts hogwartsNew = students[y];
-        System.out.println(hogwarts.getSurname() + hogwarts.getName());
+        Hogwarts hogwarts = students[y];
+        System.out.println(hogwarts.getSurname() + hogwarts.getName() + a);
         int b = hogwarts.getPowerOfMagic() + hogwarts.getTransgressionDistance();
         if (a>b){
             System.out.print(hogwarts.getSurname() + hogwarts.getName() + " обладает бОльшей мощностью магии, чем ");
