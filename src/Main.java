@@ -17,13 +17,11 @@ public class Main {
                 new Hogwarts("Белби ","Маркус", 68,71),
         };
 
-
         Gryffindor [] potterSquad = {
                 new Gryffindor("Поттер","Гарри", 62,27,67,43,98),
                 new Gryffindor("Грейнджер ","Гермиона",95,78,70,80,50),
                 new Gryffindor("Уизли ","Рон",34,48,40,56,39),
         };
-
         Slytherin [] malfoySquad = {
                 new Slytherin("Малфой ","Драко",69,57,74,65,46,69,87),
                 new Slytherin("Монтегю ","Грэхэм",45,17,53,36,71,78,57),
@@ -40,10 +38,11 @@ public class Main {
                 new Ravenclaw("Белби ","Маркус", 68,71,51,87,12,61),
         };
         PrintService printService = new PrintService();
-        printService.print(students);
+        printService.print(students,0);
         printService.print(potterSquad);
         printService.print(malfoySquad);
-        printService.print(diggorySquad);
-
+        printService.print(diggorySquad,0);
+        printService.print(lovegoodSquad,2);
+        printService.bestWizard(students,0,1);
     }
 }
