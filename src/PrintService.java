@@ -27,9 +27,23 @@ public class PrintService {
             System.out.println("Студент: " + slytherin.getSurname() + slytherin.getName()
                     + "; Сила магии: " + slytherin.getPowerOfMagic()
                     + "; Дистанция трансгресии: " + slytherin.getTransgressionDistance()
-                    + "Факультет: Гриффиндор. Благородство: " + slytherin.getGuile()
-                    + "; Честь:" + slytherin.getResolve()
-                    + "; Храбрость:" + slytherin.getAmbition() + ".");
+                    + "Факультет: Слизерин. Хитрость: " + slytherin.getGuile()
+                    + "; Решительность:" + slytherin.getResolve()
+                    + "; Амбициозность:" + slytherin.getAmbition()
+                    + "; Находчивость: " + slytherin.getGumption()
+                    + "; Жажда власти: " + slytherin.getLustForPower() + ".");
+        }
+    }
+    public void print(Hufflepuff [] diggorySquad){
+        System.out.println("Студентов на факультете: " + diggorySquad.length);
+        for (int i = 0; i < diggorySquad.length; i++) {
+            Hufflepuff hufflepuff = diggorySquad[i];
+            System.out.println("Студент: " + hufflepuff.getSurname() + hufflepuff.getName()
+                    + "; Сила магии: " + hufflepuff.getPowerOfMagic()
+                    + "; Дистанция трансгресии: " + hufflepuff.getTransgressionDistance()
+                    + "Факультет: Хаффлпафф. Трудолюбие: " + hufflepuff.getHardWork()
+                    + "; Верность:" + hufflepuff.getLoyalty()
+                    + "; Честность:" + hufflepuff.getHonesty() + ".");
         }
     }
 }
