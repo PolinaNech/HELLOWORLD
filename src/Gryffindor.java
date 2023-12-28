@@ -41,4 +41,18 @@ public class Gryffindor extends Hogwarts {
                 "; Честь:" + honor +
                 "; Храбрость:" + bravery + '.';
     }
+    public static void bestOnGryffindor(Gryffindor  studentsOne,Gryffindor studentsTwo){
+        int sumStudentsOne=studentsOne.getNobility() + studentsOne.getHonor() + studentsOne.getBravery();
+        int sumStudentsTwo = studentsTwo.getNobility() + studentsTwo.getHonor() + studentsTwo.getBravery();
+        if (sumStudentsOne>sumStudentsTwo){
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + "  лучший Гриффиндорец, чем "
+                    + studentsTwo.getSurname() + studentsTwo.getName());
+        } else if (sumStudentsTwo>sumStudentsOne) {
+            System.out.println(studentsTwo.getSurname() + studentsTwo.getName() + "  лучший Гриффиндорец, чем "
+                    + studentsOne.getSurname() + studentsOne.getName());
+        } else {
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + " и "
+                    + studentsTwo.getSurname() + studentsTwo.getName() + " равны по силе.");
+        }
+    }
 }

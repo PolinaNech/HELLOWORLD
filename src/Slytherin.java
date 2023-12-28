@@ -61,4 +61,19 @@ public class Slytherin extends Hogwarts{
                 + "; Находчивость: " + gumption
                 + "; Жажда власти: " + lustForPower + ".";
     }
+
+    public static void bestOnSlytherin(Slytherin  studentsOne,Slytherin studentsTwo){
+        int sumStudentsOne=studentsOne.getGuile() + studentsOne.getResolve() + studentsOne.getAmbition() + studentsOne.getGumption() + studentsOne.getLustForPower();
+        int sumStudentsTwo = studentsTwo.getGuile() + studentsTwo.getResolve() + studentsTwo.getAmbition() + studentsTwo.getGumption() + studentsTwo.getLustForPower();
+        if (sumStudentsOne>sumStudentsTwo){
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + "  лучший Слизеринец, чем "
+                    + studentsTwo.getSurname() + studentsTwo.getName());
+        } else if (sumStudentsTwo>sumStudentsOne) {
+            System.out.println(studentsTwo.getSurname() + studentsTwo.getName() + "  лучший Слизеринец, чем "
+                    + studentsOne.getSurname() + studentsOne.getName());
+        } else {
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + " и "
+                    + studentsTwo.getSurname() + studentsTwo.getName() + " равны по силе.");
+        }
+    }
 }

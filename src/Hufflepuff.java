@@ -35,8 +35,23 @@ public class Hufflepuff extends Hogwarts {
     }
     @Override
     public String toString() {
-        return super.toString() + " Факультет: Хаффлпафф. Трудолюбие: " + hardWork
+        return super.toString() + " Факультет: Пуффендуй. Трудолюбие: " + hardWork
                 + "; Верность:" + loyalty
                 + "; Честность:" + honesty + ".";
+    }
+
+    public static void bestOnHufflepuff(Hufflepuff  studentsOne,Hufflepuff studentsTwo){
+        int sumStudentsOne=studentsOne.getHardWork() + studentsOne.getLoyalty() + studentsOne.getHonesty();
+        int sumStudentsTwo = studentsTwo.getHardWork() + studentsTwo.getLoyalty() + studentsTwo.getHonesty();
+        if (sumStudentsOne>sumStudentsTwo){
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + "  лучший Пуффендуец, чем "
+                    + studentsTwo.getSurname() + studentsTwo.getName());
+        } else if (sumStudentsTwo>sumStudentsOne) {
+            System.out.println(studentsTwo.getSurname() + studentsTwo.getName() + "  лучший Пуффендуец, чем "
+                    + studentsOne.getSurname() + studentsOne.getName());
+        } else {
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + " и "
+                    + studentsTwo.getSurname() + studentsTwo.getName() + " равны по силе.");
+        }
     }
 }

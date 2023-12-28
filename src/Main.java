@@ -37,9 +37,15 @@ public class Main {
                 new Ravenclaw("Патил ","Падма",70,62,78,43,54,39),
                 new Ravenclaw("Белби ","Маркус", 68,71,51,87,12,61),
         };
-        PrintService printService = new PrintService();
+
         System.out.println(Arrays.toString(new Gryffindor[]{potterSquad[0]}));
-
+        System.out.println(Arrays.toString(new Slytherin []{malfoySquad[2]}));
+        System.out.println(Arrays.toString(new Hufflepuff []{diggorySquad[1]}));
+        System.out.println(Arrays.toString(new Ravenclaw [] {lovegoodSquad[0]}));
+        Hogwarts.bestWizard(students[0],students [1]);
+        Gryffindor.bestOnGryffindor(potterSquad[2],potterSquad [1]);
+        Slytherin.bestOnSlytherin(malfoySquad[0],malfoySquad[1]);
+        Hufflepuff.bestOnHufflepuff(diggorySquad[1],diggorySquad[0]);
+        Ravenclaw.bestOnRavenclaw(lovegoodSquad[2],lovegoodSquad[0]);
     }
-
 }

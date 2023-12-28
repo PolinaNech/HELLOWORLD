@@ -44,9 +44,23 @@ public class Ravenclaw extends Hogwarts {
     }
     @Override
     public String toString() {
-        return super.toString() + " Факультет: Рейвнкло. Ум: " + smart
+        return super.toString() + " Факультет: Когтевран. Ум: " + smart
                 + "; Мудрость:" + wise
                 + "; Остроумие:" + witty
                 + "; Творческие наклонности:" + creative + ".";
+    }
+    public static void bestOnRavenclaw(Ravenclaw  studentsOne,Ravenclaw studentsTwo){
+        int sumStudentsOne=studentsOne.getSmart() + studentsOne.getWise() + studentsOne.getWitty() + studentsOne.getCreative();
+        int sumStudentsTwo = studentsTwo.getSmart() + studentsTwo.getWise() + studentsTwo.getWitty() + studentsTwo.getCreative();
+        if (sumStudentsOne>sumStudentsTwo){
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + "  лучший Когтевранец, чем "
+                    + studentsTwo.getSurname() + studentsTwo.getName());
+        } else if (sumStudentsTwo>sumStudentsOne) {
+            System.out.println(studentsTwo.getSurname() + studentsTwo.getName() + "  лучший Когтевранец, чем "
+                    + studentsOne.getSurname() + studentsOne.getName());
+        } else {
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + " и "
+                    + studentsTwo.getSurname() + studentsTwo.getName() + " равны по силе.");
+        }
     }
 }

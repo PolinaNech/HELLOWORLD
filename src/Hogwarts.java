@@ -41,7 +41,7 @@ public class Hogwarts  {
                 + "; Сила магии: " + powerOfMagic
                 + "; Дистанция трансгресии: " + transgressionDistance + ". ";
     }
-    public void bestWizard(Hogwarts [] studentsOne,Hogwarts[] studentsTwo){
+    public static void bestWizard(Hogwarts  studentsOne,Hogwarts studentsTwo){
         int sumStudentsOne=studentsOne.getPowerOfMagic() + studentsOne.getTransgressionDistance();
         int sumStudentsTwo = studentsTwo.getPowerOfMagic() + studentsTwo.getTransgressionDistance();
         if (sumStudentsOne>sumStudentsTwo){
@@ -51,8 +51,8 @@ public class Hogwarts  {
             System.out.println(studentsTwo.getSurname() + studentsTwo.getName() + " обладает бОльшей мощностью магии, чем "
                     + studentsOne.getSurname() + studentsOne.getName());
         } else {
-            System.out.println(studentsOne.getSurname() + studentsOne.getName() + " равен по силе "
-                    + studentsTwo.getSurname() + studentsTwo.getName());
+            System.out.println(studentsOne.getSurname() + studentsOne.getName() + " и "
+                    + studentsTwo.getSurname() + studentsTwo.getName() + " равны по силе.");
         }
     }
 }
