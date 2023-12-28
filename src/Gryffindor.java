@@ -34,4 +34,11 @@ public class Gryffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
+
+    @Override
+    public String toString() {
+        return super.toString() + " Факультет: Гриффиндор. Благородство: " + nobility +
+                "; Честь:" + honor +
+                "; Храбрость:" + bravery + '.';
+    }
 }

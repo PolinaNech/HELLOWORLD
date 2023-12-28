@@ -18,7 +18,7 @@ public class Main {
         };
 
         Gryffindor [] potterSquad = {
-                new Gryffindor("Поттер","Гарри", 62,27,67,43,98),
+                new Gryffindor("Поттер ","Гарри", 62,27,67,43,98),
                 new Gryffindor("Грейнджер ","Гермиона",95,78,70,80,50),
                 new Gryffindor("Уизли ","Рон",34,48,40,56,39),
         };
@@ -38,11 +38,8 @@ public class Main {
                 new Ravenclaw("Белби ","Маркус", 68,71,51,87,12,61),
         };
         PrintService printService = new PrintService();
-        printService.print(students,0);
-        printService.print(potterSquad);
-        printService.print(malfoySquad);
-        printService.print(diggorySquad,0);
-        printService.print(lovegoodSquad,2);
-        printService.bestWizard(students,0,1);
+        System.out.println(Arrays.toString(new Gryffindor[]{potterSquad[0]}));
+
     }
+
 }

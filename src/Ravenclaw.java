@@ -42,4 +42,11 @@ public class Ravenclaw extends Hogwarts {
     public void setCreative(int creative) {
         this.creative = creative;
     }
+    @Override
+    public String toString() {
+        return super.toString() + " Факультет: Рейвнкло. Ум: " + smart
+                + "; Мудрость:" + wise
+                + "; Остроумие:" + witty
+                + "; Творческие наклонности:" + creative + ".";
+    }
 }
