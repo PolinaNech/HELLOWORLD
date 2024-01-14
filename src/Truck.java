@@ -1,5 +1,4 @@
 public class Truck extends Bicycle{
-
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }

@@ -1,4 +1,5 @@
 public class ServiceStation extends Bicycle {
+
     public void check(Car car, Bicycle bicycle, Truck truck) {
         if (car != null) {
             System.out.println("Обслуживаем " + car.modelName);
