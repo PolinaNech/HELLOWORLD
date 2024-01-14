@@ -1,8 +1,9 @@
-public class Bicycle {
+public class Bicycle extends Repairable {
     public String modelName;
     public int wheelsCount;
 
-    public void updateTyre() {
+    @Override
+    public void repair() {
         System.out.println("Меняем покрышку");
     }
 }
